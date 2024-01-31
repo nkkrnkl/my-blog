@@ -4,8 +4,8 @@
 #   - .sass-cache/
 #   - .jekyll-cache/
   # - gemfiles/
-  # - Gemfile
-  # - Gemfile.lock
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
@@ -55,7 +55,7 @@ title: The Diary of an AI Practitioner
 email: nnkaranikola@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a place to learn all things AI. 
-baseurl: "/ai-blog/ " # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: https://nkkrnkl.github.io  # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
