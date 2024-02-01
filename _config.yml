@@ -4,8 +4,8 @@
 #   - .sass-cache/
 #   - .jekyll-cache/
   # - gemfiles/
-  # - Gemfile
-  # - Gemfile.lock
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
@@ -32,7 +32,7 @@ collections:
   posts:
     title: Blog # Needed for Siteleaf
     output: true
-    description: "This is merely a demo, find out more [about Garth](about)" # The post list page content
+    description: "This a blog of things I learned all about AI!" # The post list page content
 
 # 6. Jekyll collections settings
 defaults:
@@ -55,11 +55,12 @@ title: The Diary of an AI Practitioner
 email: nnkaranikola@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a place to learn all things AI. 
-baseurl: "/ai-blog/ " # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
+domain: nkkrnkl.github.io 
 url: https://nkkrnkl.github.io  # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
-domain: nkkrnkl.github.io 
+
 
 # Build settings
 theme: minima
