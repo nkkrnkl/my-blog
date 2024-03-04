@@ -19,9 +19,13 @@ LoRA was introduced in a paper published in 2021 with the title LoRA: Low-Rank A
 LoRA is an approximaization technique using the Rank Factorization Theorem from linear algebra to estimate the lower rank of the matrix’s model weights. 
 
 Let’s see how its performed on a high level; 
+
 1) The pre-trained model weights are frozen (W).
-2) Two lower rank decomposition matrices are introduced A and B, approximating the change in the frozen weights matrix (dW). The result of their product has the same dimensions as the matrix’s weight. It’s important to note that the smaller the rank of the decomposition matrices the smaller the trainable parameters. 
+   
+2) Two lower rank decomposition matrices are introduced A and B, approximating the change in the frozen weights matrix (dW). The result of their product has the same dimensions as the matrix’s weight. It’s important to note that the smaller the rank of the decomposition matrices the smaller the trainable parameters.
+   
 3) Then the product of those two matrices, A and B, known as the adapter, is trained with the pre-trained model.
+   
 4) Lastly, the trained adapter is incorporated into the different layers of the pretrained model (W’ = W + AB).
 
 One extremely useful element of LoRA is its flexibility, as a single GPU can be substantial to perform it. 
@@ -31,6 +35,8 @@ Now that we know the basics of LoRA let’s experiment with it.
 Here, is a great [link](https://huggingface.co/docs/diffusers/main/en/training/lora) from the Hugging Face library to use in your future projects. 
 
 Sources:
-1) Hu, E.J. et al. (2021) Lora: Low-rank adaptation of large language models, arXiv.org. Available at: https://doi.org/10.48550/arXiv.2106.09685 (Accessed: 04 March 2024). 
+
+1) Hu, E.J. et al. (2021) Lora: Low-rank adaptation of large language models, arXiv.org. Available at: https://doi.org/10.48550/arXiv.2106.09685 (Accessed: 04 March 2024).
+   
 2) Shrish (2023) Lora: Low-rank adaptation from the First Principle, Medium. Available at: https://medium.com/@Shrishml/lora-low-rank-adaptation-from-the-first-principle-7e1adec71541 (Accessed: 04 March 2024). 
 
